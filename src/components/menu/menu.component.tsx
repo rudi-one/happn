@@ -18,6 +18,14 @@ const MenuComponent = () => {
           title={`Pages ${value}`}
         /> )}
       </MenuList>
+      <Link to={{
+        pathname: '/modal',
+        state: {
+          background: location
+        }
+      }}>
+        <Button label={'Modal'} />
+      </Link>
     </MenuContainer>
   )
 }
