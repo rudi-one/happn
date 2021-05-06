@@ -15,7 +15,7 @@ const MenuComponent = () => {
         { [1,2,3].map((value, index) => <MenuItem
           key={index}
           url={`/pages/${value}`}
-          title={`Pages ${value}`}
+          title={`Page ${value}`}
         /> )}
       </MenuList>
       <Link to={{
