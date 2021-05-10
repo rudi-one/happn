@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import CounterContext from '../../contexts/counter/counter.context';
 import { Wrapper, Counter } from './test.styles';
 
 type Props = {
@@ -18,12 +17,10 @@ const TestPage = () => {
 
   return (
     <Wrapper>
-      <CounterContext.Provider value={{ count: count }}>
-        <h1>Page {id}</h1>
-        <div>
-          Counter: <Counter>{count}</Counter>
-        </div>
-      </CounterContext.Provider>
+      <h1>Page {id}</h1>
+      <div>
+        Counter: <Counter>{count}</Counter>
+      </div>
     </Wrapper>
   )
 }
